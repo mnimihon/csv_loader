@@ -1,0 +1,18 @@
+ul{
+    display:table;
+    margin:auto;
+}
+li{
+    display:table-cell;
+    text-align:center;
+    padding:3px 10px;
+}
+a{
+    display:table-cell;
+    valign:bottom;
+    font-size: 200%
+}
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
