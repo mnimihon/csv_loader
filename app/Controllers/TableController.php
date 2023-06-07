@@ -16,7 +16,7 @@ class TableController extends Controller
 
     public function actionDelete()
     {
-        (new Products)->delete(false);
+        (new Products)->delete(true);
         (new Response)->redirect('/table');
     }
 }

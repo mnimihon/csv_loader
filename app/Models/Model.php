@@ -74,9 +74,9 @@ abstract class Model
         return (new ReflectionClass($this))->getProperties(ReflectionProperty::IS_PUBLIC);
     }
 
-    public function delete($allFlag = true)
+    public function delete($allFlag = false)
     {
-        $conditions = $allFlag ? ' WHERE id = ' . $this->id : null;
+        $conditions = $allFlag ?  null : ' WHERE id = ' . $this->id;
         return $this->db->exec('DELETE FROM ' . $this->getTableName() . $conditions);
     }
 }
